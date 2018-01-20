@@ -1,5 +1,4 @@
 from selenium import webdriver
-# from os import system as sys
 import sqlite3
 from datetime import datetime, timedelta
 
@@ -34,7 +33,7 @@ def user_creation():
     c, conn = dbconnection()
 
     # Getting time
-    print("\n[?] Actual time: %s [?]" % (datetime.now()))
+    print(f'\n[?] Actual time: {datetime.now()} [?]')
     mytime = datetime.now()
     # Db relationship
     flag = False
@@ -55,6 +54,8 @@ def user_creation():
         oldtime = oldtime + timedelta(days=10)
         print("[!] Time is Up [!]" if mytime >= oldtime else
               "[!] You have time yet [!]")
+        print(f'You now have other {oldtime - mytime}')
+
 
     choose = input("\n:: Do you want to make a new account? [Y/n] ")
     if choose.upper() == "Y":
