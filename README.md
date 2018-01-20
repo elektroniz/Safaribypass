@@ -7,3 +7,8 @@ This tool is a **proof of concept** of how you could unleash a web driver that i
 * Run ./install.sh as sudo.
 * Run Geckodriver and select the port with --port (number) argument.
 * Run the safaribypass: python3 safaibypass.py
+
+## Contribute
+![alt text](https://imgur.com/a/zLI2S)
+
+If you want to improve my software you are free to do it.
